@@ -51,6 +51,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       prefetchedData={plasmicData}
       pageRoute={pageMeta.path}
       pageParams={pageMeta.params}
+      authRedirectUri={'https://jn-neeritter.vercel.app/'}
     >
       <PlasmicComponent component={pageMeta.displayName} />
     </PlasmicRootProvider>
